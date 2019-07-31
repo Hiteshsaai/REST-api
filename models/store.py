@@ -2,7 +2,7 @@ import sqlite3
 from db import db
 
 class StoreModel(db.Model):
-    ___tablename__ = 'stores'
+    __tablename__ = 'stores'
 
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(80))
