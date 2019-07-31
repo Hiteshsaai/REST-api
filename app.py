@@ -16,7 +16,6 @@ app.secret_key = 'keys'
 api = Api(app)
 
 
-
 jwt = JWT(app, authenticate, identity)  # /auth
 
 api.add_resource(Store, '/store/<string:name>')
